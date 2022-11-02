@@ -1,0 +1,17 @@
+ a {
+text-decoration: none;
+color: rgb(236, 214, 9);
+transition:  1s;
+}
+a:hover{
+background-color: rgb(255, 0, 0);
+opacity: 0,5;
+
+}
+.active {
+    color: red;
+}
+body{
+background-color: darkcyan;
+
+}
