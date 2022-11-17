@@ -2,19 +2,29 @@
 <html>
   <link rel="stylesheet" href="style.css">
 <style>
-table, th, td {
-  border:1px solid rgb(0, 0, 0);
-}
+  table {
+      text-align: center;
+      border: 5px solid rgba(2, 9, 77, 0.93);
+      border-collapse: collapse;
+  }        
+  td,
+  th {
+      border: 4px dotted rgb(6, 51, 252);
+      width: 100px;
+  }
 </style>
 <body>
 
-  <div class="sidebar">
-    <a href="index.html">Főoldal</a>
-    <a href="keplink.html">keplink</a>
-    <a href="lista.html">lista</a>
-    <a href="táblázat.html">Órarend</a>
-    <a href="ürlap.html">Űrlap</a>
-</div>
+  <div class="nav">
+    <ul>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="keplink.html">Képlink</a></li>
+        <li><a href="lista.html">lista</a></li>
+        <li><a class="active" href="táblázat.html">Órarend</a></li>
+        <li><a href="ürlap.html">Űrlap</a></li>
+        <li><a href="Kocka.html">DIV</a></li>
+    </ul>
+    <br>
 
 <h1>Órarend</h1>
 
