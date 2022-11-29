@@ -44,3 +44,11 @@ background-color: rgb(163, 213, 230);
 h1 {
   color: rgb(9, 23, 218);
 }
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(134, 245, 112);
+  color: rgb(20, 22, 196);
+  display: block;
+}
