@@ -46,9 +46,11 @@ h1 {
 }
 
 footer {
-  text-align: center;
+
   padding: 3px;
   background-color: rgb(134, 245, 112);
   color: rgb(20, 22, 196);
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
