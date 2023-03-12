@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pitagorasz tétel</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+@import url('https://https://fonts.google.com/specimen/Rubik+Iso');
+
+    h1{
+    font-family: 'Rubik Iso';
+    }
+    fieldset{
+            background-color: rgb(235, 179, 172);
+        }
+        legend{
+            color: rgb(9, 61, 204);
+            background-color: chocolate;
+            border: 2px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="keplink.html">Képlink</a></li>
+            <li><a href="lista.html">lista</a></li>
+            <li><a href="táblázat.html">Órarend</a></li>
+            <li><a href="ürlap.html">Űrlap</a></li>
+            <li><a href="Kocka.html">DIV</a></li>
+            <li><a href="homoktovis.html">Homoktövis</a></li>
+            <li><a href="szám.html">szám</a></li>
+            <li><a class=active href="pitagorasz.html">Pitagorasz</a></li>
+        </ul>
+        <br>
+    </div>
+        <h1>Pitagorasz tétel számoló</h1>
+
+    <img src="pita.png" alt="pitagorasz" title="ez a  Pitagorasz tétel">
+    <form action="javascript:void(0)">
+        <fieldset>
+            <legend>Pitagorasz tétel :)</legend>
+            <label for="a">a oldal:</label>
+            <input type="text" name="pit" id="a" oninput="szam()">
+            <label for="b">b oldal:</label>
+            <input type="text" name="pit" id="b" oninput="szam()">
+            <label for="c">c oldal:</label>
+            <input type="text" name="pit" id="c">
+            <input type="button" value="Törlés" onclick="torol()">
+        </fieldset>
+    </form>
+
+
+    <footer>
+        <p>szerző: Körmöndi Richárd<br>
+        <a href="KormondiR@kkszki.hu">KormondiR@kkszki.hu</a></p>
+      </footer>
+
+    <script>
+        function szam () {
+             if (a.value != 0 && b.value != 0){
+                c.value = Math.sqrt ((a.value * a.value) + (b.value * b.value))
+            }
+            else if (a.value != 0 && c.value != 0){
+                b.value = Math.sqrt ((a.value * a.value) + (c.value * c.value))
+            }
+            else if (b.value != 0 && c.value != 0){
+                a.value = Math.sqrt ((b.value * b.value) + (c.value * c.value))
+            }
+        }
+
+    function torol() {
+        a.value = "";
+        b.value = "";
+        c.value = "";
+    }
+    </script>
+</body>
+</html>
